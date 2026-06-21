@@ -1,0 +1,80 @@
+{
+  "name": "diagram-weaver",
+  "displayName": "Diagram Weaver",
+  "description": "Generate minimal, hand-drawn diagrams using VS Code's native Language Model API.",
+  "version": "1.0.0",
+  "publisher": "abhijeetnardele",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhijeetnardele/diagram-weaver"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "extensionDependencies": [
+    "github.copilot-chat"
+  ],
+  "categories": [
+    "Machine Learning",
+    "Visualization"
+  ],
+  "icon": "media/icon.png",
+  "main": "./out/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "diagramweaver.diagram",
+        "name": "diagram",
+        "fullName": "Diagram Weaver",
+        "description": "Generate clean, hand-drawn Mermaid diagrams using Copilot Chat.",
+        "isSticky": true,
+        "commands": [
+          {
+            "name": "fromSelection",
+            "description": "Generate a diagram based on the currently selected code."
+          },
+          {
+            "name": "explainProject",
+            "description": "Scan workspace files and generate a high-level architecture diagram."
+          },
+          {
+            "name": "generateDocs",
+            "description": "Create an ARCHITECTURE.md file with a diagram and explanation of the current project."
+          }
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "diagramweaver.openLast",
+        "title": "Diagram Weaver: Open Last Diagram"
+      },
+      {
+        "command": "diagramweaver.exportDiagram",
+        "title": "Diagram Weaver: Export Current Diagram"
+      },
+      {
+        "command": "diagramweaver.generate",
+        "title": "Diagram Weaver: Weave Diagram (Project Auto-Scan or Custom Prompt)"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "postinstall": "node -e \"const fs=require('fs'); fs.mkdirSync('media', {recursive: true}); fs.copyFileSync('node_modules/mermaid/dist/mermaid.min.js', 'media/mermaid.min.js');\""
+  },
+  "dependencies": {
+    "mermaid": "^11.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.93.0",
+    "typescript": "^5.4.0"
+  }
+}
