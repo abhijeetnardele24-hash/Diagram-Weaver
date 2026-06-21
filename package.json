@@ -2,7 +2,7 @@
   "name": "diagram-weaver",
   "displayName": "Diagram Weaver",
   "description": "Generate minimal, hand-drawn diagrams using VS Code's native Language Model API.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "abhijeetnardele",
   "repository": {
     "type": "git",

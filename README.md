@@ -4,7 +4,7 @@
 
 # Diagram Weaver
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=abhijeetnardele.diagram-weaver)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=abhijeetnardele.diagram-weaver)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.93%2B-007ACC?style=flat-square&logo=visualstudiocode)](https://code.visualstudio.com/)
 [![Free](https://img.shields.io/badge/price-FREE-brightgreen?style=flat-square)]()
 
