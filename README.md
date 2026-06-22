@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/icon.png" width="100" height="100" alt="Diagram Weaver"/>
+<img src="./media/icon.png" width="100" height="100" alt="Diagram Weaver"/>
 
 # Diagram Weaver
 
@@ -20,13 +20,13 @@ Super fast. Works with 100% FREE AI models (Groq & Gemini) — No Copilot needed
 Diagram Weaver supports three distinct visual aesthetics. Pick the one that fits your project!
 
 ### 🎨 Eraser.io Style (Beautiful Modern)
-![Eraser Style](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/eraser.png)
+![Eraser Style](./eraser.png)
 
 ### 🔷 Mermaid Classic
-![Mermaid Classic](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/mermaid.png)
+![Mermaid Classic](./mermaid.png)
 
 ### 📐 Draw.io Export Mode
-![Draw.io Export](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/draw.png)
+![Draw.io Export](./draw.png)
 
 ---
 
@@ -99,3 +99,10 @@ Once your diagram is generated, you have 4 single-click export options:
 
 ## 🤝 Open Source
 Diagram Weaver is completely free and open source. Enjoy crafting beautiful architectures directly in your editor!
+
+---
+
+### 🔍 Related Tags & Supported Workflows
+*Built for developers who love tools like: ChatGPT, OpenAI, GitHub Copilot, Claude, Groq, Gemini, Anthropic, Llama, AI Coding Assistants.*  
+*Great alternative to: Draw.io, Eraser.io, Excalidraw, Lucidchart, Miro, PlantUML, Structurizr, Gliffy.*  
+*Use cases: System Design, Microservices Architecture, Flowcharts, UML Diagrams, Cloud Infrastructure, AWS/GCP/Azure Diagrams, Sequence Diagrams, ER Diagrams, Mindmaps.*

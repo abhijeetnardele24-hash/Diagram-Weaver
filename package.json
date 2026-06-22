@@ -1,7 +1,7 @@
 {
   "name": "diagram-weaver",
   "displayName": "Diagram Weaver",
-  "description": "Generate hand-drawn, minimalist Mermaid diagrams using native VS Code Language Models.",
+  "description": "AI Diagram Generator: Auto-scan workspaces to build Mermaid, Draw.io & Eraser architecture diagrams. Powered by Free AI (Groq, Gemini, Copilot).",
   "version": "1.1.0",
   "publisher": "abhijeetnardele",
   "repository": {
@@ -20,14 +20,9 @@
   "keywords": [
     "diagram",
     "architecture",
-    "mermaid",
     "ai",
-    "gemini",
-    "flowchart",
-    "visualization",
-    "auto diagram",
-    "system design",
-    "free"
+    "copilot",
+    "mermaid"
   ],
   "icon": "media/icon.png",
   "main": "./out/extension.js",
