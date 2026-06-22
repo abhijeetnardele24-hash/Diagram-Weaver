@@ -15,19 +15,6 @@ Super fast. Works with 100% FREE AI models (Groq & Gemini) — No Copilot needed
 
 ---
 
-## 🎨 The New Dashboard Experience
-
-Diagram Weaver now features a dedicated, ultra-premium sidebar UI. No more clunky command palette popups!
-
-![Sidebar Interface](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/sidebar.png)
-
-Everything you need is in one place:
-- **AI Provider Selection:** Instantly switch between Groq, Gemini, and Copilot.
-- **Diagram Styles:** Choose between Mermaid Classic, Eraser.io Modern, and Draw.io Advanced.
-- **Architecture Prompting:** Describe what you want and generate instantly.
-
----
-
 ## 🖼️ Beautiful Diagram Styles
 
 Diagram Weaver supports three distinct visual aesthetics. Pick the one that fits your project!
@@ -39,7 +26,7 @@ Diagram Weaver supports three distinct visual aesthetics. Pick the one that fits
 ![Mermaid Classic](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/mermaid.png)
 
 ### 📐 Draw.io Export Mode
-![Draw.io Export](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/drawio.png)
+![Draw.io Export](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/draw.png)
 
 ---
 
