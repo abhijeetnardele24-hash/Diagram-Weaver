@@ -1,8 +1,8 @@
 {
   "name": "diagram-weaver",
   "displayName": "Diagram Weaver",
-  "description": "Generate hand-drawn architecture diagrams using FREE Groq AI, Gemini, or GitHub Copilot — zero setup required.",
-  "version": "1.0.3",
+  "description": "Generate hand-drawn, minimalist Mermaid diagrams using native VS Code Language Models.",
+  "version": "1.1.0",
   "publisher": "abhijeetnardele",
   "repository": {
     "type": "git",
