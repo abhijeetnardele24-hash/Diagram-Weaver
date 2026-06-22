@@ -1,33 +1,59 @@
 {
   "name": "diagram-weaver",
   "displayName": "Diagram Weaver",
-  "description": "Generate minimal, hand-drawn diagrams using VS Code's native Language Model API.",
-  "version": "1.0.1",
+  "description": "Generate hand-drawn architecture diagrams using FREE Groq AI, Gemini, or GitHub Copilot — zero setup required.",
+  "version": "1.0.3",
   "publisher": "abhijeetnardele",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhijeetnardele/diagram-weaver"
+    "url": "https://github.com/abhijeetnardele24-hash/Diagram-Weaver"
   },
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "vscode": "^1.93.0"
   },
-  "extensionDependencies": [
-    "github.copilot-chat"
-  ],
   "categories": [
     "Machine Learning",
-    "Visualization"
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "diagram",
+    "architecture",
+    "mermaid",
+    "ai",
+    "gemini",
+    "flowchart",
+    "visualization",
+    "auto diagram",
+    "system design",
+    "free"
   ],
   "icon": "media/icon.png",
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Diagram Weaver",
+      "properties": {
+        "diagramWeaver.groqApiKey": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Your **FREE** Groq API key from [console.groq.com/keys](https://console.groq.com/keys). Groq is the fastest AI API — 1–3 second diagram generation. No credit card needed. Key starts with `gsk_`."
+        },
+        "diagramWeaver.geminiApiKey": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Your **FREE** Gemini API key from [aistudio.google.com](https://aistudio.google.com/app/apikey). Once set, Diagram Weaver uses Gemini automatically — no GitHub Copilot needed."
+        }
+      }
+    },
     "chatParticipants": [
       {
         "id": "diagramweaver.diagram",
         "name": "diagram",
         "fullName": "Diagram Weaver",
-        "description": "Generate clean, hand-drawn Mermaid diagrams using Copilot Chat.",
+        "description": "Generate clean, hand-drawn Mermaid diagrams. Works with free Gemini API or GitHub Copilot.",
         "isSticky": true,
         "commands": [
           {
@@ -40,12 +66,16 @@
           },
           {
             "name": "generateDocs",
-            "description": "Create an ARCHITECTURE.md file with a diagram and explanation of the current project."
+            "description": "Create an ARCHITECTURE.md file with a diagram of the current project."
           }
         ]
       }
     ],
     "commands": [
+      {
+        "command": "diagramweaver.generate",
+        "title": "Diagram Weaver: Weave Diagram (Project Auto-Scan or Custom Prompt)"
+      },
       {
         "command": "diagramweaver.openLast",
         "title": "Diagram Weaver: Open Last Diagram"
@@ -55,10 +85,30 @@
         "title": "Diagram Weaver: Export Current Diagram"
       },
       {
-        "command": "diagramweaver.generate",
-        "title": "Diagram Weaver: Weave Diagram (Project Auto-Scan or Custom Prompt)"
+        "command": "diagramweaver.resetProvider",
+        "title": "Diagram Weaver: Reset AI Provider (Switch between Groq / Gemini / Copilot)"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "diagramweaver-sidebar",
+          "title": "Diagram Weaver",
+          "icon": "media/sidebar-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "diagramweaver-sidebar": [
+        {
+          "type": "webview",
+          "id": "diagramweaver.sidebarView",
+          "name": "Live Architecture",
+          "icon": "media/sidebar-icon.svg",
+          "contextualTitle": "Diagram Weaver"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

@@ -4,68 +4,111 @@
 
 # Diagram Weaver
 
-[![Version](https://img.shields.io/badge/version-1.0.1-blue?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=abhijeetnardele.diagram-weaver)
+[![Version](https://img.shields.io/badge/version-1.0.3-blue?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=abhijeetnardele.diagram-weaver)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.93%2B-007ACC?style=flat-square&logo=visualstudiocode)](https://code.visualstudio.com/)
-[![Free](https://img.shields.io/badge/price-FREE-brightgreen?style=flat-square)]()
+[![Free](https://img.shields.io/badge/AI%20Generation-100%25%20FREE-brightgreen?style=flat-square)]()
 
-No API key. No setup. Just instant architecture diagrams.
+**Generate beautiful, production-level architecture diagrams instantly from a dedicated VS Code Sidebar.**  
+Super fast. Works with 100% FREE AI models (Groq & Gemini) — No Copilot needed.
 
 </div>
 
 ---
 
-## 🖼️ Output Preview
+## 🎨 The New Dashboard Experience
 
-![Diagram Weaver Output](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/result.png)
+Diagram Weaver now features a dedicated, ultra-premium sidebar UI. No more clunky command palette popups!
+
+![Sidebar Interface](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/sidebar.png)
+
+Everything you need is in one place:
+- **AI Provider Selection:** Instantly switch between Groq, Gemini, and Copilot.
+- **Diagram Styles:** Choose between Mermaid Classic, Eraser.io Modern, and Draw.io Advanced.
+- **Architecture Prompting:** Describe what you want and generate instantly.
+
+---
+
+## 🖼️ Beautiful Diagram Styles
+
+Diagram Weaver supports three distinct visual aesthetics. Pick the one that fits your project!
+
+### 🎨 Eraser.io Style (Beautiful Modern)
+![Eraser Style](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/eraser.png)
+
+### 🔷 Mermaid Classic
+![Mermaid Classic](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/mermaid.png)
+
+### 📐 Draw.io Export Mode
+![Draw.io Export](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/drawio.png)
 
 ---
 
 ## ⚡ Why Diagram Weaver?
 
-| Feature | Diagram Weaver | Eraser.io | Draw.io |
-|--------|:-:|:-:|:-:|
-| Works inside VS Code | ✅ | ❌ | ❌ |
-| Zero API key needed | ✅ | ❌ | ❌ |
-| Auto-scans your project | ✅ | ❌ | ❌ |
-| Dark-mode output | ✅ | ✅ | ❌ |
-| 100% Free | ✅ | ❌ | ❌ |
+| Feature | Diagram Weaver | Web Tools |
+|--------|:-:|:-:|
+| Works completely inside VS Code | ✅ | ❌ |
+| 100% Free AI Generation | ✅ | ❌ |
+| Auto-scans your workspace | ✅ | ❌ |
+| Dedicated Sidebar UI | ✅ | ❌ |
+| Ultra-fast (1–3 seconds with Groq) | ✅ | ❌ |
+| Export PNG, SVG, Mermaid, Draw.io | ✅ | ✅ |
 
 ---
 
-## 🚀 How To Use
+## 🛠️ The Setup (100% Free & Easy)
 
-### Option 1 — Auto-Scan (Zero Prompt)
-1. Open any project in VS Code
-2. Press `Ctrl+Shift+P` → type **"Diagram Weaver: Weave Diagram"**
-3. Leave the prompt **empty** and hit Enter
-4. Your full architecture diagram appears instantly ✨
+Diagram Weaver supports 3 powerful AI providers.
 
-### Option 2 — Custom Prompt
-1. Press `Ctrl+Shift+P` → **"Diagram Weaver: Weave Diagram"**
-2. Type anything: *"Draw a REST API with JWT auth and MongoDB"*
-3. Done!
+### 🥇 Option 1: Groq API (Highly Recommended)
+Groq uses advanced Llama models running on specialized hardware. It is **mind-blowingly fast (1-3 seconds)** and completely free.
+1. Go to 👉 [console.groq.com/keys](https://console.groq.com/keys)
+2. Sign in with Google and click **"Create API Key"**
+3. Paste it into the Diagram Weaver Sidebar!
 
-### Option 3 — Copilot Chat
-```
-@diagram draw a microservices architecture with API Gateway
-@diagram /explainProject       → scans your whole workspace
-@diagram /fromSelection        → diagrams your selected code
-@diagram /generateDocs         → creates ARCHITECTURE.md
-```
+### 🥈 Option 2: Gemini API (Alternative Free)
+Google's Gemini 1.5 Flash model is also free.
+*Get a key at [aistudio.google.com](https://aistudio.google.com/app/apikey).*
+
+### 🥉 Option 3: GitHub Copilot
+If you already pay for GitHub Copilot Chat, Diagram Weaver can hook directly into it! No keys required.
 
 ---
 
-## ⚙️ Requirements
+## 🚀 How to Use
 
-- VS Code `v1.93.0+`
-- GitHub Copilot Chat (free tier works)
+Using Diagram Weaver is incredibly intuitive with the new sidebar:
+
+### 🌟 Auto-Scan Your Project (Zero Prompting)
+Want a diagram but don't want to type anything?
+1. Open the **Diagram Weaver Sidebar** (the icon on the left panel).
+2. Click **"Auto-Scan Project"** at the bottom.
+3. Diagram Weaver instantly reads your files and draws your exact architecture!
+
+### ✍️ Custom Prompt Mode
+Know exactly what you want?
+1. Open the **Diagram Weaver Sidebar**.
+2. Select your Diagram Style (e.g., Eraser.io style).
+3. Type a prompt like: *"Draw a React frontend talking to a Node backend with MongoDB"*
+4. Click **Generate Diagram** and watch it appear instantly.
+
+### 💬 Copilot Chat Integration
+If you prefer chat, you can still talk to Diagram Weaver directly in the Copilot Chat panel!
+- `@diagram draw a microservices architecture with AWS`
+- `@diagram /explainProject` *(scans your whole workspace)*
+- `@diagram /fromSelection` *(diagrams the code you highlighted)*
+- `@diagram /generateDocs` *(dumps the diagram into an ARCHITECTURE.md file)*
 
 ---
 
-<div align="center">
+## 💾 Exporting Your Work
+Once your diagram is generated, you have 4 single-click export options:
+- **Export SVG**: For pixel-perfect infinite scaling.
+- **Export PNG**: For sending on Slack/Discord.
+- **Export Mermaid**: For saving the raw code to Github Markdown.
+- **Export Draw.io**: For opening in Draw.io to manually edit the boxes and arrows later!
 
-Made with ❤️ by [Abhijeet Nardele](https://github.com/abhijeetnardele24-hash)
+---
 
-<!-- vscode diagram generator, ai architecture diagram, mermaid vscode, auto diagram, copilot diagram, system design vscode, flowchart generator, hand drawn diagram vscode, free mermaid, vscode extension diagram, architecture documentation, ai mermaid generator, zero prompt diagram -->
-
-</div>
+## 🤝 Open Source
+Diagram Weaver is completely free and open source. Enjoy crafting beautiful architectures directly in your editor!
