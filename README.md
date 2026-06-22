@@ -20,13 +20,13 @@ Super fast. Works with 100% FREE AI models (Groq & Gemini) — No Copilot needed
 Diagram Weaver supports three distinct visual aesthetics. Pick the one that fits your project!
 
 ### 🎨 Eraser.io Style (Beautiful Modern)
-![Eraser Style](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/eraser.png)
+![Eraser Style](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/eraser.png)
 
 ### 🔷 Mermaid Classic
-![Mermaid Classic](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/mermaid.png)
+![Mermaid Classic](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/mermaid.png)
 
 ### 📐 Draw.io Export Mode
-![Draw.io Export](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/media/draw.png)
+![Draw.io Export](https://raw.githubusercontent.com/abhijeetnardele24-hash/Diagram-Weaver/main/draw.png)
 
 ---
 
